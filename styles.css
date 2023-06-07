@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Nunito:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap');
 
 * {
+
+    /*Setting padding: 0 and margin: 0 for all elements means that you are removing 
+    any default padding and margin values that are applied by the
+    browser's default stylesheet. 
+    */
     padding:0;
     margin: 0;
     box-sizing: border-box;
@@ -53,6 +58,7 @@ cursor: pointer;
 .header-image{
     width: 500px;
 }
+
 a{
     color: black;
     font-size: 24px;
@@ -65,13 +71,13 @@ a{
 
 ul{
     display: flex;
-  
 }
 
 li{
     list-style-type: none;
     margin-left: 16px;
 }
+
 
 #about,
 #discord,
@@ -149,6 +155,7 @@ form {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    padding: 0 50px;
 }
 
 input, textarea {
@@ -172,7 +179,7 @@ footer {
 }
 
 .footer__logo {
-    /* width: 50%; */
+     
     max-width: 480px;
     margin-bottom: 16px;
 }
@@ -190,6 +197,74 @@ footer {
     padding-bottom: 10px;
 }
 
+
+/*If screen size is less than 728px then the below
+styles applied or above styles applied
+
+Small phones, Tablets and Large Smartphones
+
+*/
 @media (max-width: 728px) {
-    
+
+.row{
+    flex-direction: column;
+}
+.logo {
+    width: 40%;
+}
+.home__description {
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.home__description--button{
+
+    max-width: 240px;
+
+}
+h1 {
+    text-align: center;
+    font-size: 45px;
+}
+.sub-para {
+    text-align: center;
+    font-size: 24px;
+}
+ul {
+    display: none;
+}   
+.section__description {
+    display: flex;
+    flex-direction: column;
+}
+.section__description {
+    flex-direction: column;
+}
+.section__description--wrapper {
+    width: 100%;
+}
+
+.about__img--wrapper {
+    width: 100%;
+}
+.section__description--discord {
+    display: flex;
+    flex-direction: column-reverse;
+}
+footer {
+    padding: 48px 24px;
+}
+.footer__logo {
+    max-width: 300px;
+}
+.footer__link {
+    padding: 8px;
+    font-size: 18px;
+   
+}
+.footer__links {
+    margin-bottom: 24px;
+}
+
 }
