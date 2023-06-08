@@ -56,7 +56,7 @@ cursor: pointer;
     justify-content: center;
 }
 .header-image{
-    width: 500px;
+    width: 300px;
 }
 
 a{
@@ -222,6 +222,9 @@ Small phones, Tablets and Large Smartphones
 
     max-width: 240px;
 
+}
+.header-image {
+    width: 200px;
 }
 h1 {
     text-align: center;
