@@ -13,7 +13,7 @@
 }
 
 nav{
-    height: 70px;
+    height: 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -262,7 +262,7 @@ footer {
     max-width: 300px;
 }
 .footer__link {
-    padding: 4px;
+    padding: 8px;
     font-size: 18px;
    
 }
